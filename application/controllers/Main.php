@@ -26,9 +26,7 @@ class Main extends CI_Controller {
 			$this->session->set_userdata($data);
 			// Redirecting the users to the member page
 			redirect('Main/members');
-		} else {
-			$this->login();
-		}		
+		} 		
 	}
 	
 	public function validate_credentials(){

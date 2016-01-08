@@ -11,6 +11,33 @@
 <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
 <link type="text/css" rel="stylesheet" href="<?php echo asset_url();?>css/jquery.bxslider.css" />
 <script src="<?php echo asset_url();?>js/bootstrap.js"></script>
+<script>
+        $(document).ready(function (){
+            $("#frm_login").submit(function (e){
+                e.preventDefault();
+                var url = $(this).attr('action');
+                var method = $(this).attr('method');
+                var data = $(this).serialize();
+                console.log(data);
+                console.log(method);
+                console.log(url);
+                $.ajax({
+                   url:url,
+                   type:method,
+                   data:data
+                }).done(function(data){
+                	console.log(data);
+                   if(data == false){
+                	   $("#error_section").html("Incorrect username/password");
+                       } else {
+                    	   window.location.href='<?php echo base_url() ?>Main/members';
+                           }
+                });
+            });
+
+            
+        });
+</script>
 </head>
 <body>
 <section id="header">
@@ -34,8 +61,48 @@
 					<li><a href="contact.html">CONTACT</a></li>
 					<li><a href="clinics.html">CLINICS</a></li>
 					<li><a href="doctors.html">DOCTORS</a></li>
+					<li><a data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
 				 </ul>
 			</div><!--/.nav-collapse -->
 		</nav> 
 	</div>       
 </section>
+<!-- Trigger the modal with a button -->
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+		<div class="modal-content">
+		      <div class="modal-header" style="background-color: #33adff;color: white;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Please sign in to your account.</h4>
+		      </div>
+		      <div class="modal-body">
+		        
+		        <div class="container">
+		  <form method="post" id="frm_login" class="form-inline" role="form" accept-charset="utf-8" action="<?php echo base_url()?>Main/login_validation">
+		    <div class="form-group">
+		      <label for="email">Email:</label>
+		      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?php $this->input->post('email')?>">
+		    </div>
+		    <div class="form-group">
+		      <label for="pwd">Password:</label>
+		      <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+		    </div>
+		    <button type="submit" name="login_submit" class="btn btn-default">Submit</button>
+		    <a href="<?php echo base_url()?>main/signup"> Sign up!</a>
+		    <div class="form_validation_error" id="error_section"><?php echo validation_errors();?></div>
+		  </form>
+		</div>	
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>

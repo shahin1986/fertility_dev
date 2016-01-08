@@ -3,22 +3,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $this->load->view('header');
 ?>
 
-<div class="container">
-  <form method="post" class="form-inline" role="form" accept-charset="utf-8" action="<?php echo base_url()?>Main/login_validation">
-    <div class="form-group">
-      <label for="email">Email:</label>
-      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?php $this->input->post('email')?>">
-    </div>
-    <div class="form-group">
-      <label for="pwd">Password:</label>
-      <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
-    </div>
-    <button type="submit" name="login_submit" class="btn btn-default">Submit</button>
-    <a href="<?php echo base_url()?>main/signup">Sign up!</a>
-    <div class="form_validation_error"><?php echo validation_errors();?></div>
-  </form>
-</div>	
-
 <section id="banner">
 	<div class="container">
 		<div class="large-12 text-center columns">
