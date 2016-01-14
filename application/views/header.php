@@ -5,9 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 <title>Onboard Network - Advertise with Music Influencers</title>
 <link type="text/css" rel="stylesheet" href="<?php echo asset_url();?>css/bootstrap.css" />
+<link href="<?php echo asset_url();?>css/bootstrap-slider.css" rel="stylesheet">
 <link href="<?php echo asset_url();?>css/style.css" type="text/css" rel="stylesheet" />
 <link href='https://fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,200,200italic,300,300italic,400italic,600,600italic,700,900,900italic,700italic' rel='stylesheet' type='text/css'>
 <script type='text/javascript' src='http://code.jquery.com/jquery-1.8.3.js'></script>
 <link type="text/css" rel="stylesheet" href="<?php echo asset_url();?>css/jquery.bxslider.css" />
 <script src="<?php echo asset_url();?>js/bootstrap.js"></script>
@@ -40,7 +42,7 @@
 </script>
 </head>
 <body>
-<section id="header">
+<section id="header" class="inner">
 	<div class="container">
 		<nav class="navbar navbar-default navbar-static-top responsive col-lg-12" role="navigation">
 			<div class="navbar-header responsive">
@@ -56,8 +58,8 @@
 			</div>
 			<div id="navbar" class="navbar-collapse text-right collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li class="active"><a href="index.html">HOME</a></li>
-					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="index.html">HOME</a></li>
+					<li class="active"><a href="about.html">ABOUT</a></li>
 					<li><a href="contact.html">CONTACT</a></li>
 					<li><a href="clinics.html">CLINICS</a></li>
 					<li><a href="doctors.html">DOCTORS</a></li>

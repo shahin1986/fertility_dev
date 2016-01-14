@@ -3,24 +3,26 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $this->load->view('header');
 ?>
 
-<section id="banner">
+
+
+<section id="banner" class="inner">
 	<div class="container">
 		<div class="large-12 text-center columns">
 			<ul class="bxslider">
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,00 FERTILITY DOCTORS <br/>& CLINICS</h3>
-						<p>Are you having problems getting pregnant?</p>
-						<h4>Ask a Fertility Doctor</h4>
+						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
+						<p>find the top 10 fertility clinics in your area</p>
+						<h5>(based on successful pregnancy and birth rates)</h5>
 					</div>
 					<div class="container">
-						<div class="col-lg-6 col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
+						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
 							<form>
-								<div class="col-lg-9 responsive col-xs-9 none">
-									<input type="text" placeholder="Type your question for a fertility doctor here"/>
+								<div class="col-lg-8 responsive col-sm-8">
+									<input type="text" placeholder="Enter Zip Code"/>
 								</div>
-								<div class="col-lg-3 responsive col-xs-3 none text-left columns">
-									<input type="submit" value="Submit" id="question_submit"/>
+								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
+									<input type="submit" value="search"/>
 								</div>
 							</form>						
 						</div>
@@ -28,18 +30,18 @@ $this->load->view('header');
 				</li>
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,00 FERTILITY DOCTORS <br/>& CLINICS</h3>
-						<p>Are you having problems getting pregnant?</p>
-						<h4>Ask a Fertility Doctor</h4>
+						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
+						<p>find the top 10 fertility clinics in your area</p>
+						<h5>(based on successful pregnancy and birth rates)</h5>
 					</div>
 					<div class="container">
-						<div class="col-lg-6 col-sm-10 col-xs-10 col-lg-offset-3 col-sm-offset-1 col-xs-offset-1">
+						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
 							<form>
-								<div class="col-lg-9 col-xs-9 none">
-									<input type="text" placeholder="Type your question for a fertility doctor here"/>
+								<div class="col-lg-8 responsive col-sm-8">
+									<input type="text" placeholder="Enter Zip Code"/>
 								</div>
-								<div class="col-lg-3 col-xs-3 none text-left columns">
-									<input type="submit" value="Submit"/>
+								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
+									<input type="submit" value="search"/>
 								</div>
 							</form>						
 						</div>
@@ -47,18 +49,18 @@ $this->load->view('header');
 				</li>
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,00 FERTILITY DOCTORS <br/>& CLINICS</h3>
-						<p>Are you having problems getting pregnant?</p>
-						<h4>Ask a Fertility Doctor</h4>
+						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
+						<p>find the top 10 fertility clinics in your area</p>
+						<h5>(based on successful pregnancy and birth rates)</h5>
 					</div>
 					<div class="container">
-						<div class="col-lg-6 col-sm-10 col-xs-10 col-lg-offset-3 col-sm-offset-1 col-xs-offset-1">
+						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
 							<form>
-								<div class="col-lg-9 col-xs-9 none">
-									<input type="text" placeholder="Type your question for a fertility doctor here"/>
+								<div class="col-lg-8 responsive col-sm-8">
+									<input type="text" placeholder="Enter Zip Code"/>
 								</div>
-								<div class="col-lg-3 col-xs-3 none text-left columns">
-									<input type="submit" value="Submit"/>
+								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
+									<input type="submit" value="search"/>
 								</div>
 							</form>						
 						</div>
@@ -66,18 +68,18 @@ $this->load->view('header');
 				</li>
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,00 FERTILITY DOCTORS <br/>& CLINICS</h3>
-						<p>Are you having problems getting pregnant?</p>
-						<h4>Ask a Fertility Doctor</h4>
+						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
+						<p>find the top 10 fertility clinics in your area</p>
+						<h5>(based on successful pregnancy and birth rates)</h5>
 					</div>
 					<div class="container">
-						<div class="col-lg-6 col-sm-10 col-xs-10 col-lg-offset-3 col-sm-offset-1 col-xs-offset-1">
+						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
 							<form>
-								<div class="col-lg-9 col-xs-9 none">
-									<input type="text" placeholder="Type your question for a fertility doctor here"/>
+								<div class="col-lg-8 responsive col-sm-8">
+									<input type="text" placeholder="Enter Zip Code"/>
 								</div>
-								<div class="col-lg-3 col-xs-3 none text-left columns">
-									<input type="submit" value="Submit"/>
+								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
+									<input type="submit" value="search"/>
 								</div>
 							</form>						
 						</div>
@@ -85,18 +87,18 @@ $this->load->view('header');
 				</li>
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,00 FERTILITY DOCTORS <br/>& CLINICS</h3>
-						<p>Are you having problems getting pregnant?</p>
-						<h4>Ask a Fertility Doctor</h4>
+						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
+						<p>find the top 10 fertility clinics in your area</p>
+						<h5>(based on successful pregnancy and birth rates)</h5>
 					</div>
 					<div class="container">
-						<div class="col-lg-6 col-sm-10 col-xs-10 col-lg-offset-3 col-sm-offset-1 col-xs-offset-1">
+						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
 							<form>
-								<div class="col-lg-9 col-xs-9 none">
-									<input type="text" placeholder="Type your question for a fertility doctor here"/>
+								<div class="col-lg-8 responsive col-sm-8">
+									<input type="text" placeholder="Enter Zip Code"/>
 								</div>
-								<div class="col-lg-3 col-xs-3 none text-left columns">
-									<input type="submit" value="Submit"/>
+								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
+									<input type="submit" value="search"/>
 								</div>
 							</form>						
 						</div>
@@ -109,180 +111,137 @@ $this->load->view('header');
 		<div class="container">
 			<div class="large-12 text-center columns">
 				<ul class="bxslider-two">
-					<li class="first">Stanford Fertility & Reproductive Center</li>
-					<li>John Hopkins Fertility Center</li>
-					<li class="third">Mayo Clinic</li>
-					<li>Reproductive Science Center</li>
-					<li>Dartmouth Medical Center</li>
-					<li>Pacific Fertility Center</li>
+					<li>Stanford Fertility & Reproductive Center</li>
+					<li class="second">John Hopkins Fertility Center</li>
+					<li class="last">Reproductive Science Center</li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="about">
+<section id="about" class="inner">
 	<div class="container">
 		<div class="col-lg-10 col-xs-12 col-lg-offset-1 text-center">
-			<h3>ABOUT US</h3>
-			<h4>We are dedicated to help you find the right answers.</h4>
-			<p class="text-left">1 out of 8 women in the United States (7.0 million) have difficult getting pregnant or staying pregnant. Fertility Counselors is dedicated to helping women who are having trouble conceiving, find the right treatment, the right doctor and the right answers. We are networks of the highest rated fertility doctors and clinics across the U.S. Our members are fertility specialists with years of success helping women achieve pregnancy.</p>
-			<p class="text-left">Choosing the right fertility treatment and doctor can be a difficult decision - We are here to help you find the right answers.</p>
+			<p>We are a networks of the highest rated fertility doctors and clinics across the U.S. Our members are fertility specialists with years of success helping woman get pregnant.</p>
+			<h3>How many months have you been trying to get pregnant?</h3>
 		</div>
 	</div>
 </section>
-<section id="info">
+<section id="form">
 	<div class="container">
-		<div class="col-lg-10 col-lg-offset-1 col-xs-12 responsive text-center">
-			<div class="panel responsive">
-				<h3>Are you having difficulty getting pregnant?</h3>
-				<div class="col-lg-6 col-sm-6 responsive">
-					<div class="col-lg-8 col-xs-8 responsive text-right">
-						<h4>What is your age?</h4>
-					</div>
-					<div class="col-lg-4 responsive none-for-small col-xs-4">
-						<input type="text" placeholder="....."/>
-					</div>
-					<div class="col-lg-8 col-xs-8 responsive text-right">
-						<h4>How many months have you been trying to get pregnant?</h4>
-					</div>
-					<div class="col-lg-4 none-for-small responsive col-xs-4">
-						<input type="text" placeholder="....."/>
-					</div>
-					<div class="col-lg-8 col-xs-8 responsive text-right">
-						<h4>Are you worried about a health condition that could make conceiving dif ficult?</h4>
-					</div>
-					<div class="col-lg-4 none-for-small col-xs-4 responsive top">
-						<input type="text" placeholder="....."/>
-					</div>
-				</div>
-				<div class="col-lg-5 col-sm-6 responsive end">
-					<div class="col-lg-8 col-xs-8 text-right">
-						<h4>Where do you live?</h4>
-					</div>
-					<div class="col-lg-4 none-for-small responsive col-xs-4">
-						<input type="text" placeholder="....."/>
-					</div>
-					<div class="col-lg-8 col-xs-8 responsive text-right">
-						<h4>I’m interested in <Br/>learning about...</h4>
-					</div>
-					<div class="col-lg-4 none-for-small responsive col-xs-4">
-						<select>Treatment
-							<option>Treatment</option>
-							<option>Treatment</option>
-							<option>Treatment</option>
-						</select>
-					</div>
-					<div class="col-lg-12 col-xs-12">
-						<div class="col-lg-8 col-xs-8 text-right"></div>
-						<div class="col-lg-4 col-xs-4 responsive-large right text-right">
-							<input type="submit" value="Find Out"/>
-						</div>
-					</div>	
-				</div>
+		<div class="col-lg-12 range">
+			<input id="ex1" data-slider-id='ex1Slider' type="text" placeholder="1 Months" data-slider-min="0" data-slider-max="36" data-slider-step="1" data-slider-value="18"/>
+			<div class="col-lg-3 pull-left none col-xs-6">
+				<h4>1 month</h4>
+			</div>
+			<div class="col-lg-3 col-xs-6 pull-right text-right none">
+				<h4>36 month</h4>
 			</div>
 		</div>
+		<form>
+			<div class="col-lg-4 col-xs-12 col-sm-5">
+				<label>What is your age?</label>
+				<select>
+					<option>Select</option>
+					<option>Select</option>
+					<option>Select</option>
+				</select>
+				<label>Are you worried about any health condition that could make conceiving difficult?</label>
+				<select>
+					<option>Select</option>
+					<option>Select</option>
+					<option>Select</option>
+				</select>
+			</div>
+			<div class="col-lg-5 col-xs-12 col-sm-4">
+				<label>Type your question for a fertility doctor here</label>
+				<textarea></textarea>
+			</div>
+			<div class="col-lg-3 col-xs-12 col-sm-3">
+				<input type="submit" value="Submit" />
+			</div>
+		</form>
 	</div>
 </section>
-<section id="content">
+<section id="testimonials">
 	<div class="container">
-		<div class="col-lg-8">
+		<div class="col-lg-9 nopadding">
+			<div class="col-lg-6 col-sm-6">
+				<a href="#">egg (oocyte) freezing <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
+				<img src="<?php echo asset_url();?>/images/testi_first.png" alt=""/>
+			</div>
 			<div class="col-lg-6 col-sm-6">
 				<div class="position">
-					<img src="<?php echo asset_url();?>images/img_first.png" alt=""/>
-					<a href="#">Egg (Oocyte) Freezing</a>
+					<a href="#">in vitro fertilization (IVF) <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
+					<img src="<?php echo asset_url();?>/images/testi_second.png" alt=""/>
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6">
 				<div class="position">
-					<img src="<?php echo asset_url();?>images/img_first.png" alt=""/>
-					<a href="#">In Vitro Fertilization (IVF)</a>
+					<a href="#">oocyte (egg) Donation <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
+					<img src="<?php echo asset_url();?>/images/testi_third.png" alt=""/>
 				</div>
 			</div>
 			<div class="col-lg-6 col-sm-6">
 				<div class="position">
-					<img src="<?php echo asset_url();?>images/img_first.png" alt=""/>
-					<a href="#">Egg (Oocyte) Freezing</a>
-				</div>
-			</div>
-			<div class="col-lg-6 col-sm-6">
-				<div class="position">
-					<img src="<?php echo asset_url();?>images/img_first.png" alt=""/>
-					<a href="#">In Vitro Fertilization (IVF)</a>
+					<a href="#">intrauterine insemination (iui) <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
+					<img src="<?php echo asset_url();?>/images/testi_fourth.png" alt=""/>
 				</div>
 			</div>
 		</div>
-		<div class="col-lg-4 col-sm-6">
-			<div class="panel">
-				<h3>Do you need help<br/> paying for treatment?</h3>
-				<h4>Save <span>30-40% </span><br/>on IVF Treatment</h4>
-				<p>Don’t let the cost of  fertility treatment stop you from achieving your dream of having a baby.</p>
-				<h5>We can help <a class="right" href="#">Find out how</a></h5>
-				<a class="arrow right" href="#"><img src="<?php echo asset_url();?>images/arrow_right_black.png" alt=""/></a>
+		<div class="col-lg-3 text-center col-sm-12 nopadding">
+			<div class="col-lg-12 col-sm-6 nopadding">
+			<h3>find the top 10 fertility
+clinics in your area</h3>
+			<p>(Based on successful pregnancy<br />and birth rates)</p>
+			<form>
+				<input type="text" placeholder="Enter Zip Code" />
+				<input type="submit" value="search" />
+			</form>
 			</div>
-		</div>
-	</div>	
-</section>
-<section id="newsletter">
-	<div class="container">
-		<div class="col-lg-12 text-center">
-			<h3>Let’s Find the Right Feritlity Doctor for You</h3>
-		</div>
-		<div class="col-lg-6  col-lg-offset-3 col-xs-10 col-sm-6 small-centered gridlist text-center columns">
-			<div class="col-lg-9 col-xs-9 none">
-				<input type="text" placeholder="Find a specialist near you. Enter ZIP or City"/>
-			</div>
-			<div class="col-lg-3 col-xs-3  text-left">
-				<input type="submit" value="Search"/>
+			<div class="col-lg-12 col-sm-6 nopadding">
+				<div class="panel">
+					<img class="first" src="<?php echo asset_url();?>/images/img_caller.png" alt="" />
+					<h4>Speak to a fertility<br/>counselor </h5>
+					<h5><img src="<?php echo asset_url();?>/images/icon_call.png" alt="" /> 1-800-555-5555</h5>
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="links">
+<section id="condition">
 	<div class="container">
-		<div class="col-lg--12 text-center">
-			<h3>Browse by Condition</h3>
+		<div class="col-lg-4 col-sm-4 col-md-4">
+			<h3>conditions</h3>
+			<a href="#">Unexplained Infertility</a>
+			<a href="#">Diminished Ovarian Reserve</a>
+			<a href="#">Tubal Disease</a>
+			<a href="#">Endometriosis</a>
+			<a href="#">Implantation Problems</a>
+			<a href="#">Male Infertility</a>
 		</div>
-		<div class="col-lg-3 col-sm-3 col-xs-6">
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
+		<div class="col-lg-4 col-sm-4 col-md-4">
+			<h3>treatments</h3>
+			<a href="#">In Vitro Fertilization (VIF)</a>
+			<a href="#">IVF/Egg Sharing Treatment</a>
+			<a href="#">Natural Cycle IVF</a>
+			<a href="#">Egg (Oocyte) Freezing</a>
+			<a href="#">Oocyte (Egg) Donation (Fresh Cycle)</a>
+			<a href="#">Surrogacy & Oocyte Donation</a>
 		</div>
-		<div class="col-lg-3 col-sm-3 col-xs-6">
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-		</div>
-		<div class="col-lg-3 col-sm-3 col-xs-6">
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-		</div>
-		<div class="col-lg-3 col-sm-3 col-xs-6">
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
-			<a href="#">Conditions</a>
+		<div class="col-lg-4 col-sm-4 col-md-4">
+			<h3>&nbsp;</h3>
+			<a href="#">Ovulation Induction</a>
+			<a href="#">Genetic Diagnosis (PGD or PGS)</a>
+			<a href="#">Gestational Surrogacy</a>
+			<a href="#">Sperm Aspiration</a>
+			<a href="#">Single and LGBT Treatments</a>
 		</div>
 	</div>
 </section>
-<section id="sample-ad">
-	<div class="container">
-		<div class="col-lg-6 col-sm-6">
-			<img src="<?php echo asset_url();?>images/img_blank.png" alt=""/>
-		</div>
-		<div class="col-lg-6 col-sm-6">
-			<h3>Sample Ad Copy</h3>
-			<p class="text-left small-only-text-center">This is the begining of just some body text. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Fusce dapibus, risus. Lorem ipsum dolor sit amet, consectetur</p>
-		</div>
-	</div>
-</section>
+
+
+
 <?php
 $this->load->view('footer');
 ?>
