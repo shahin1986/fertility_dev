@@ -117,4 +117,8 @@ class Main extends CI_Controller {
 		} else echo "Failed to add user, please try again.";
 		
 	}
+	///////////// dashboard /////////////
+	public function admin_dashboard(){
+		$this->load->view('admin_dashboard');
+	}
 }
