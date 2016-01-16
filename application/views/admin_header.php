@@ -13,8 +13,33 @@
     <script src="<?php echo asset_url();?>/dashboard/js/jquery/jquery-1.8.2.min.js" type="text/javascript" ></script>
     <link href="<?php echo asset_url();?>/dashboard/css/customize-template.css" type="text/css" media="screen, projection" rel="stylesheet" />
 
-    <style>
-    </style>
+    <script>
+        $(document).ready(function (){
+            $("#admin_submit").submit(function (e){
+                e.preventDefault();
+                var url = $(this).attr('action');
+                var method = $(this).attr('method');
+                var data = $(this).serialize();
+                console.log(data);
+                console.log(method);
+                console.log(url);
+                $.ajax({
+                   url:url,
+                   type:method,
+                   data:data
+                }).done(function(data){
+                	console.log(data);
+                   if(data == false){
+                	   $("#error_section").html("Incorrect username/password");
+                       } else {
+                    	   window.location.href='<?php echo base_url() ?>Main/admin_dashboard_home';
+                           }
+                });
+            });
+
+            
+        });
+</script>
 </head>
     <body>
         <div class="navbar navbar-fixed-top">

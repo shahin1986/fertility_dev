@@ -1,4 +1,7 @@
 <?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+<?php
 $this->load->view('admin_header');
 ?>
     <section class="page container">
@@ -11,7 +14,19 @@ $this->load->view('admin_header');
         </div>
     </section>
 
-    
+    <div id="container">
+	<h1>Members Page</h1>
+	<?php
+	
+	echo "<pre>";
+	print_r($this->session->all_userdata());
+	echo"</pre>";
+	
+	?>
+	
+	<a href='<?php echo base_url()?>main/admin_logout'>Logout</a>
+	
+	</div>
 
             </div>
         </div>
