@@ -78,7 +78,7 @@
 
     <!-- Modal content-->
 		<div class="modal-content">
-		      <div class="modal-header" style="background-color: #33adff;color: white;">
+		      <div class="modal-header" style="background-color: #335764;color: white;">
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <h4 class="modal-title">Please sign in to your account.</h4>
 		      </div>
