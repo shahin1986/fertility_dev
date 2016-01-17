@@ -1,39 +1,55 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
 ?>
 <?php
-$this->load->view('admin_header');
+
+$this->load->view ( 'admin_header' );
 ?>
-    <section class="page container">
-        <div class="row">
-            <div class="span16">
-                <div class="box">
-					<h3>Welcome to the admin page</h3>
+<?php
+
+foreach ( $css_files as $file ) :
+	?>
+<link type="text/css" rel="stylesheet" href="<?php echo $file; ?>" />
+<?php endforeach; ?>
+<?php foreach($js_files as $file): ?>
+<script src="<?php echo $file; ?>"></script>
+<?php endforeach; ?>
+<style type='text/css'>
+body {
+	font-family: Arial;
+	font-size: 14px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+	font-size: 14px;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+</style>
+<section class="page container">
+	<div class="row">
+		<div class="span16">
+			<div class="box">
+						<?php
+						
+						echo $output;
+						
+						?>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <div id="container">
-	<h1>Members Page</h1>
-	<?php
-	
-	echo "<pre>";
-	print_r($this->session->all_userdata());
-	echo"</pre>";
-	
-	?>
-	
-	<a href='<?php echo base_url()?>main/admin_logout'>Logout</a>
-	
+		</div>
 	</div>
+</section>
 
-            </div>
-        </div>
 
-        <div id="spinner" class="spinner" style="display:none;">
-            Loading&hellip;
-        </div>
-	<?php
-	$this->load->view('admin_footer');
-	?>
+</div>
+</div>
+
+<div id="spinner" class="spinner" style="display: none;">
+	Loading&hellip;</div>
+<?php
+$this->load->view ( 'admin_footer' );
+?>

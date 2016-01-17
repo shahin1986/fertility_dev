@@ -12,34 +12,7 @@
 
     <script src="<?php echo asset_url();?>/dashboard/js/jquery/jquery-1.8.2.min.js" type="text/javascript" ></script>
     <link href="<?php echo asset_url();?>/dashboard/css/customize-template.css" type="text/css" media="screen, projection" rel="stylesheet" />
-
-    <script>
-        $(document).ready(function (){
-            $("#admin_submit").submit(function (e){
-                e.preventDefault();
-                var url = $(this).attr('action');
-                var method = $(this).attr('method');
-                var data = $(this).serialize();
-                console.log(data);
-                console.log(method);
-                console.log(url);
-                $.ajax({
-                   url:url,
-                   type:method,
-                   data:data
-                }).done(function(data){
-                	console.log(data);
-                   if(data == false){
-                	   $("#error_section").html("Incorrect username/password");
-                       } else {
-                    	   window.location.href='<?php echo base_url() ?>Main/admin_dashboard_home';
-                           }
-                });
-            });
-
-            
-        });
-</script>
+	
 </head>
     <body>
         <div class="navbar navbar-fixed-top">
@@ -50,11 +23,11 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a href="#" class="brand">FERTILITY COUNSELORS</a>
+                    <a href="#" class="brand">FERTILITY COUNSELORS ADMIN DASHBOARD</a>
                     <div id="app-nav-top-bar" class="nav-collapse">
                         <ul class="nav pull-right">
                             <li>
-                                <a href="login.html">Logout</a>
+                                <a href='<?php echo base_url()?>Admin/admin_logout'>Logout</a>
                             </li>
                             
                         </ul>
@@ -124,11 +97,9 @@
                             </li>
                         </ul>
                         <ul class="nav nav-tabs">
-                            <li class="active">
-                                <a href="#"><i class="icon-home"></i>Home</a>
-                            </li>
-                            <li><a href="#">Maps</a></li>
-                            <li><a href="#">Admin</a></li>
+                            <li><a href='<?php echo base_url()?>Admin/dashboard'>Doctors</a></li>
+                            <li><a href='<?php echo base_url()?>Admin/registered_patients'>Registered Patients</a></li>
+                            <li><a href='<?php echo base_url()?>Admin/temp_patients'>Temporary Patients</a></li>
                         </ul>
                     </div>
                 </div>

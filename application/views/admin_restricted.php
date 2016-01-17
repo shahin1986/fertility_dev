@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div id="container">
 	<h1>Please login, you don't have access to this page.</h1>
-	<a href='<?php echo base_url(); ?>main/admin_dashboard_login'>Back to login</a>
+	<a href='<?php echo base_url(); ?>Admin/admin_dashboard_login'>Back to login</a>
 	
 </div>
 
