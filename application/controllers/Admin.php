@@ -64,7 +64,7 @@ class Admin extends CI_Controller {
 	{
 		if($this->session->userdata('is_admin_logged_in')){
 			$crud = new grocery_CRUD();
-			$crud->set_table('patients');
+			$crud->set_table('temp_patients');
 			$crud->columns('email','password');
 	
 			$output = $crud->render();
