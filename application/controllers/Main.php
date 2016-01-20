@@ -57,6 +57,10 @@ class Main extends CI_Controller {
 		$this->form_validation->set_rules('email', 'Email', 'required|trim|valid_email|is_unique[patients.email]');
 		$this->form_validation->set_rules('password', 'Password', 'required|trim');
 		$this->form_validation->set_rules('cpassword', 'Confirm Password', 'required|trim|matches[password]');
+		$this->form_validation->set_rules('name', 'Name', 'required|trim');
+		$this->form_validation->set_rules('birthYear', 'birthYear', 'required|trim');
+		$this->form_validation->set_rules('healthCondition', 'healthCondition', 'trim');
+		$this->form_validation->set_rules('monthAttempt', 'monthAttempt', 'trim');
 	
 		$this->form_validation->set_message('is_unique', "That email address already exist");
 	

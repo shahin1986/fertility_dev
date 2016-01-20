@@ -49,7 +49,7 @@ class Admin extends CI_Controller {
 		if($this->session->userdata('is_admin_logged_in')){
 			$crud = new grocery_CRUD();
 			$crud->set_table('patients');
-			$crud->columns('email','password');
+			$crud->columns('email','password','name','birthYear','monthAttempt','healthCondition','registrationDate');
 	
 			$output = $crud->render();
 	
@@ -65,7 +65,7 @@ class Admin extends CI_Controller {
 		if($this->session->userdata('is_admin_logged_in')){
 			$crud = new grocery_CRUD();
 			$crud->set_table('temp_patients');
-			$crud->columns('email','password');
+			$crud->columns('email','password','name','birthYear','monthAttempt','healthCondition','registrationDate');
 	
 			$output = $crud->render();
 	

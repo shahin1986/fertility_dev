@@ -18,10 +18,17 @@ class Model_users extends CI_Model{
 	}
 	
 	public function add_temp_user($key){
+		$curr_timestamp = date('Y-m-d H:i:s');
+// 		echo $curr_timestamp;
 		$data = array (
 				'email' => $this->input->post('email'),
 				'password' => md5($this->input->post('password')),
-				'key' => $key
+				'key' => $key,
+				'name' => $this->input->post('name'),
+				'birthYear' => $this->input->post('birthYear'),
+				'monthAttempt' => $this->input->post('monthAttempt'),
+				'healthCondition' => $this->input->post('healthCondition'),
+				'registrationDate' => $curr_timestamp
 		);
 		$query = $this->db->insert('temp_patients', $data);
 		if($query){
@@ -48,7 +55,12 @@ class Model_users extends CI_Model{
 			$row = $temp_patient->row();
 			$data = array(
 					'email' => $row->email,
-					'password' => $row->password
+					'password' => $row->password,
+					'name' => $row->name,
+					'birthYear' => $row->birthYear,
+					'monthAttempt' => $row->monthAttempt,
+					'healthCondition' => $row->healthCondition,
+					'registrationDate' => $row->registrationDate
 			);
 			$did_add_patient = $this->db->insert('patients', $data);
 		}
