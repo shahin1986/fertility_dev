@@ -98,6 +98,7 @@
                         </ul>
                         <ul class="nav nav-tabs">
                             <li><a href='<?php echo base_url()?>Admin/dashboard'>Doctors</a></li>
+                            <li><a href='<?php echo base_url()?>Admin/clinics'>Clinics</a></li>
                             <li><a href='<?php echo base_url()?>Admin/registered_patients'>Registered Patients</a></li>
                             <li><a href='<?php echo base_url()?>Admin/temp_patients'>Temporary Patients</a></li>
                         </ul>

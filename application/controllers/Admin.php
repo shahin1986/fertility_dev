@@ -44,6 +44,22 @@ class Admin extends CI_Controller {
 	
 	}
 	
+	public function clinics()
+	{
+		if($this->session->userdata('is_admin_logged_in')){
+			$crud = new grocery_CRUD();
+			$crud->set_table('clinics');
+			$crud->columns('name','address','phone', 'description', 'review', 'birthRateLess35', 'birthRate35To40', 'birthRateMore40', 'services');
+	
+			$output = $crud->render();
+	
+			$this->_example_output($output);
+		} else{
+			redirect('Admin/admin_restricted');
+		}
+	
+	}
+	
 	public function registered_patients()
 	{
 		if($this->session->userdata('is_admin_logged_in')){
