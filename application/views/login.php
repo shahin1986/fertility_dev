@@ -7,8 +7,8 @@ $this->load->view('header');
 
 <section id="banner" class="inner">
 	<div class="container">
-		<div class="large-12 text-center columns">
-			<ul class="bxslider">
+		<div class="large-12 text-center columns" ng-controller="searchBasedZipCode">
+			<ul >
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
 						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
@@ -22,88 +22,13 @@ $this->load->view('header');
 									<input type="text" placeholder="Enter Zip Code"/>
 								</div>
 								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
-									<input type="submit" value="search"/>
+									<input type="submit" value="search"/ ng-click="search()">
 								</div>
 							</form>						
 						</div>
 					</div>
 				</li>
-				<li>
-					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
-						<p>find the top 10 fertility clinics in your area</p>
-						<h5>(based on successful pregnancy and birth rates)</h5>
-					</div>
-					<div class="container">
-						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
-							<form>
-								<div class="col-lg-8 responsive col-sm-8">
-									<input type="text" placeholder="Enter Zip Code"/>
-								</div>
-								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
-									<input type="submit" value="search"/>
-								</div>
-							</form>						
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
-						<p>find the top 10 fertility clinics in your area</p>
-						<h5>(based on successful pregnancy and birth rates)</h5>
-					</div>
-					<div class="container">
-						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
-							<form>
-								<div class="col-lg-8 responsive col-sm-8">
-									<input type="text" placeholder="Enter Zip Code"/>
-								</div>
-								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
-									<input type="submit" value="search"/>
-								</div>
-							</form>						
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
-						<p>find the top 10 fertility clinics in your area</p>
-						<h5>(based on successful pregnancy and birth rates)</h5>
-					</div>
-					<div class="container">
-						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
-							<form>
-								<div class="col-lg-8 responsive col-sm-8">
-									<input type="text" placeholder="Enter Zip Code"/>
-								</div>
-								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
-									<input type="submit" value="search"/>
-								</div>
-							</form>						
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
-						<p>find the top 10 fertility clinics in your area</p>
-						<h5>(based on successful pregnancy and birth rates)</h5>
-					</div>
-					<div class="container">
-						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
-							<form>
-								<div class="col-lg-8 responsive col-sm-8">
-									<input type="text" placeholder="Enter Zip Code"/>
-								</div>
-								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
-									<input type="submit" value="search"/>
-								</div>
-							</form>						
-						</div>
-					</div>
-				</li>
+				
 			</ul>
 		</div>
 	</div>

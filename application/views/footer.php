@@ -63,5 +63,8 @@ $('#ex1').slider({
 	}
 });
 </script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script type='text/javascript' src="<?php echo asset_url();?>js/app.js"></script>
+<script type='text/javascript' src="<?php echo asset_url();?>js/mainController.js"></script>
 </body>
 </html>

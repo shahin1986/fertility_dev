@@ -41,7 +41,7 @@
         });
 </script>
 </head>
-<body>
+<body ng-app="fertility">
 <section id="header" class="inner">
 	<div class="container">
 		<nav class="navbar navbar-default navbar-static-top responsive col-lg-12" role="navigation">

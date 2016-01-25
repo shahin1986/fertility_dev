@@ -31,12 +31,24 @@ class Admin extends CI_Controller {
 	public function dashboard()
 	{
 		if($this->session->userdata('is_admin_logged_in')){
+// 			$crud = new grocery_CRUD();
+// 			$crud->set_table('doctors');
+// 			$crud->columns('full_name','address','phone','email','education', 'clinic');
+				
+// 			$output = $crud->render();
+				
+// 			$this->_example_output($output);
 			$crud = new grocery_CRUD();
+			
+			$crud->set_theme('datatables');
 			$crud->set_table('doctors');
-			$crud->columns('full_name','address','email','phone');
-				
+			//$crud->display_as('clinic','Clinic Name');
+			$crud->set_subject('doctors');
+			
+			$crud->set_relation('clinic','clinics','name');
+			
 			$output = $crud->render();
-				
+			
 			$this->_example_output($output);
 		} else{
 			redirect('Admin/admin_restricted');
