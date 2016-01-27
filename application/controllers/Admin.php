@@ -40,13 +40,13 @@ class Admin extends CI_Controller {
 // 			$this->_example_output($output);
 			$crud = new grocery_CRUD();
 			
-			$crud->set_theme('datatables');
+			//$crud->set_theme('datatables');
 			$crud->set_table('doctors');
 			//$crud->display_as('clinic','Clinic Name');
 			$crud->set_subject('doctors');
 			
 			$crud->set_relation('clinic','clinics','name');
-			
+			$crud->set_field_upload('photo_url','assets/uploads/files/doctors');
 			$output = $crud->render();
 			
 			$this->_example_output($output);
