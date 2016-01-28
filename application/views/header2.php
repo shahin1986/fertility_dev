@@ -28,16 +28,16 @@
 				<span class="icon-bar"></span>
 			  </button>
 			  <div id="logo" class="navbar-brand">
-				<a href="index.html">FERTILITY COUNSELORS</a>
+				<a href="<?php echo base_url() ?>">FERTILITY COUNSELORS</a>
 			  </div>
 			</div>
 			<div id="navbar" class="navbar-collapse text-right collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">HOME</a></li>
-					<li><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-					<li class="active"><a href="clinics.html">CLINICS</a></li>
-					<li><a href="doctors.html">DOCTORS</a></li>
+					<li><a href="<?php echo base_url() ?>">HOME</a></li>
+					<li><a href="#">ABOUT</a></li>
+					<li><a href="#">CONTACT</a></li>
+					<li class="active"><a href="<?php echo base_url() ?>Clinics">CLINICS</a></li>
+					<li><a href="<?php echo base_url() ?>Doctors">DOCTORS</a></li>
 				 </ul>
 			</div><!--/.nav-collapse -->
 		</nav> 

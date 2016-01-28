@@ -37,6 +37,19 @@
                 });
             });
 
+            $("#testt").on("click",function(){
+				var url = "http://maps.googleapis.com/maps/api/geocode/json?address=95123&sensor=true";
+				$.ajax({
+					url: url,
+					method: 'GET',
+					dataType: 'json',
+					success: function(result){
+						console.log(result);
+						}		
+					})
+
+                });
+
             
         });
 </script>
@@ -53,16 +66,16 @@
 				<span class="icon-bar"></span>
 			  </button>
 			  <div id="logo" class="navbar-brand">
-				<a href="index.html">FERTILITY COUNSELORS</a>
+				<a href="<?php echo base_url() ?>">FERTILITY COUNSELORS</a>
 			  </div>
 			</div>
 			<div id="navbar" class="navbar-collapse text-right collapse">
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="index.html">HOME</a></li>
-					<li class="active"><a href="about.html">ABOUT</a></li>
-					<li><a href="contact.html">CONTACT</a></li>
-					<li><a href="clinics.html">CLINICS</a></li>
-					<li><a href="doctors.html">DOCTORS</a></li>
+					<li><a href="<?php echo base_url() ?>">HOME</a></li>
+					<li class="active"><a href="#">ABOUT</a></li>
+					<li><a id="testt">CONTACT</a></li>
+					<li><a href="<?php echo base_url() ?>Clinics">CLINICS</a></li>
+					<li><a href="<?php echo base_url() ?>Doctors">DOCTORS</a></li>
 					<li><a data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
 				 </ul>
 			</div><!--/.nav-collapse -->
