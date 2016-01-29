@@ -4,7 +4,7 @@ app.controller('searchBasedZipCode', ['$scope', function($scope, $http){
 //		
 //	});
 	$scope.search = function(){
-		console.log("hello");
-		window.location.href='http://localhost:8888/dev/Clinics';
+		//console.log("hello");
+		window.location.href='http://fertilitycounselors.org/dev/Clinics';
 		};
 }]);

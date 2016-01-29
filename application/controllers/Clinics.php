@@ -36,5 +36,9 @@ class Clinics extends CI_Controller {
 		$this->_example_output($output);
 	}
 	
+	public function example(){
+		$this->load->view('clinicExample');
+	}
+	
 
 }
