@@ -7,7 +7,7 @@ $this->load->view('header');
 
 <section id="banner" class="inner">
 	<div class="container">
-		<div class="large-12 text-center columns" ng-controller="searchBasedZipCode">
+		<div class="large-12 text-center columns" ng-controller="homeSearchBasedZipCode">
 			<ul >
 				<li>
 					<div class="col-lg-10 col-lg-offset-1">
@@ -19,7 +19,7 @@ $this->load->view('header');
 						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
 							<form>
 								<div class="col-lg-8 responsive col-sm-8">
-									<input type="text" placeholder="Enter Zip Code"/>
+									<input type="text" id="zipCodeSearch" placeholder="Enter Zip Code"/>
 								</div>
 								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
 									<input type="submit" value="search"/ ng-click="search()">

@@ -31,24 +31,42 @@ class Admin extends CI_Controller {
 	public function dashboard()
 	{
 		if($this->session->userdata('is_admin_logged_in')){
-// 			$crud = new grocery_CRUD();
-// 			$crud->set_table('doctors');
-// 			$crud->columns('full_name','address','phone','email','education', 'clinic');
-				
-// 			$output = $crud->render();
-				
-// 			$this->_example_output($output);
-			$crud = new grocery_CRUD();
-			
+			$this->load->view('admin_home');
+
+		} else{
+			redirect('Admin/admin_restricted');
+		}
+	
+	}
+	
+	public function doctors(){
+		if($this->session->userdata('is_admin_logged_in')){
+			$crud = new grocery_CRUD();				
 			//$crud->set_theme('datatables');
 			$crud->set_table('doctors');
 			//$crud->display_as('clinic','Clinic Name');
-			$crud->set_subject('doctors');
-			
+			$crud->set_subject('doctors');				
 			$crud->set_relation('clinic','clinics','name');
 			$crud->set_field_upload('photo_url','assets/uploads/files/doctors');
 			$output = $crud->render();
-			
+				
+			$this->_example_output($output);
+		} else{
+			redirect('Admin/admin_restricted');
+		}
+	}
+	
+	public function review_doctor()
+	{
+		if($this->session->userdata('is_admin_logged_in')){
+			$crud = new grocery_CRUD();
+			$crud->set_table('review_doctor');
+			//$crud->columns('name','address','lat','lng','phone', 'description', 'review', 'birthRateLess35', 'birthRate35To40', 'birthRateMore40', 'services');
+			$crud->set_subject('review_doctor');
+			$crud->set_relation('fk_doctor','doctors','full_name');
+			$crud->set_relation('fk_patient','patients','name');
+			$output = $crud->render();
+	
 			$this->_example_output($output);
 		} else{
 			redirect('Admin/admin_restricted');
@@ -61,7 +79,8 @@ class Admin extends CI_Controller {
 		if($this->session->userdata('is_admin_logged_in')){
 			$crud = new grocery_CRUD();
 			$crud->set_table('clinics');
-			$crud->columns('name','address','phone', 'description', 'review', 'birthRateLess35', 'birthRate35To40', 'birthRateMore40', 'services');
+			//$crud->columns('name','address','lat','lng','phone', 'description', 'review', 'birthRateLess35', 'birthRate35To40', 'birthRateMore40', 'services');
+			$crud->set_subject('clinics');
 	
 			$output = $crud->render();
 	
@@ -77,7 +96,8 @@ class Admin extends CI_Controller {
 		if($this->session->userdata('is_admin_logged_in')){
 			$crud = new grocery_CRUD();
 			$crud->set_table('patients');
-			$crud->columns('email','password','name','birthYear','monthAttempt','healthCondition','registrationDate');
+			//$crud->columns('email','password','name','birthYear','monthAttempt','healthCondition','registrationDate');
+			$crud->set_subject('patients');
 	
 			$output = $crud->render();
 	
@@ -93,7 +113,8 @@ class Admin extends CI_Controller {
 		if($this->session->userdata('is_admin_logged_in')){
 			$crud = new grocery_CRUD();
 			$crud->set_table('temp_patients');
-			$crud->columns('email','password','name','birthYear','monthAttempt','healthCondition','registrationDate');
+			//$crud->columns('email','password','name','birthYear','monthAttempt','healthCondition','registrationDate');
+			$crud->set_subject('temp_patients');
 	
 			$output = $crud->render();
 	

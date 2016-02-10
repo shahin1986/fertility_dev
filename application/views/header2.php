@@ -14,7 +14,7 @@
 <link type="text/css" rel="stylesheet" href="<?php echo asset_url();?>css/jquery.bxslider.css" />
 <script src="<?php echo asset_url();?>js/bootstrap.js"></script>
 </head>
-<body>
+<body ng-app="fertility">
 <section id="clinic">
 </section>
 <section id="header" class="inner clinic">

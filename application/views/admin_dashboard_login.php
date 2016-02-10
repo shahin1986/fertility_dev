@@ -44,38 +44,58 @@
                         <div class="container">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-dashboard icon-large"></i> Dashboard
+                                    <a href='<?php echo base_url()?>Admin/dashboard'>
+                                        <i class="icon-home icon-large"></i>Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-calendar icon-large"></i> Schedule
+                                    <a href='<?php echo base_url()?>Admin/doctors'>
+                                        <i class="icon-user icon-large"></i> Doctors
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-map-marker icon-large"></i> Map It
+                                    <a href='<?php echo base_url()?>Admin/review_doctor'>
+                                        <i class="icon-star icon-large"></i> Doctors reviews
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-tasks icon-large"></i> Widgets
+                                    <a href='<?php echo base_url()?>Admin/clinics'>
+                                        <i class="icon-file icon-large"></i> Clinics
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-cogs icon-large"></i> Settings
+                                    <a href='<?php echo base_url()?>Admin/registered_patients'>
+                                        <i class="icon-user icon-large"></i> Registered Patients
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-list-alt icon-large"></i> Forms
+                                    <a href='<?php echo base_url()?>Admin/temp_patients'>
+                                        <i class="icon-user icon-large"></i> Temporary Patients
                                     </a>
                                 </li>
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-tasks icon-large"></i> Widgets -->
+<!--                                     </a> -->
+<!--                                 </li> -->
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-cogs icon-large"></i> Settings -->
+<!--                                     </a> -->
+<!--                                 </li> -->
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-calendar icon-large"></i> Schedule -->
+<!--                                     </a> -->
+<!--                                 </li> -->
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-list-alt icon-large"></i> Forms -->
+<!--                                     </a> -->
+<!--                                 </li> -->
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-bar-chart icon-large"></i> Charts
+                                    <a data-toggle="modal" data-target="#myModal">
+                                        <i class="icon-bar-chart icon-large"></i>Data visualization
                                     </a>
                                 </li>
                             </ul>

@@ -1,11 +1,8 @@
 <?php
 defined ( 'BASEPATH' ) or exit ( 'No direct script access allowed' );
-?>
-<?php
 
 $this->load->view ( 'admin_header' );
-?>
-<?php
+
 
 foreach ( $css_files as $file ) :
 	?>

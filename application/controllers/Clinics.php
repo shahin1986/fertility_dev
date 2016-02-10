@@ -40,5 +40,29 @@ class Clinics extends CI_Controller {
 		$this->load->view('clinicExample');
 	}
 	
+	public function searchResult(){
+		$this->load->view('clinicsSearchResult');
+	}
+	
+	public function getClinicsCoordinateFromDB(){
+		header("Access-Control-Allow-Origin: *");
+		header("Content-Type: application/json; charset=UTF-8");
+		
+		$conn = new mysqli("localhost", "fertility123", "Welcome#1", "fertilitycounselors");
+		
+		$result = $conn->query("SELECT name,lat,lng FROM clinics");
+		$outp = "";
+		while($rs = $result->fetch_array(MYSQLI_ASSOC)) {
+		    if ($outp != "") {$outp .= ",";}
+		    $outp .= '{"Name":"'  . $rs["name"] . '",';
+		    $outp .= '"Lat":"'   . $rs["lat"]        . '",';
+		    $outp .= '"Lng":"'. $rs["lng"]     . '"}'; 
+		}
+		$outp ='{"records":['.$outp.']}';
+		$conn->close();
+		
+		echo($outp);
+	}
+	
 
 }

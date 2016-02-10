@@ -43,38 +43,58 @@
                         <div class="container">
                             <ul>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-dashboard icon-large"></i> Dashboard
+                                    <a href='<?php echo base_url()?>Admin/dashboard'>
+                                        <i class="icon-home icon-large"></i>Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-calendar icon-large"></i> Schedule
+                                    <a href='<?php echo base_url()?>Admin/doctors'>
+                                        <i class="icon-user icon-large"></i> Doctors
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-map-marker icon-large"></i> Map It
+                                    <a href='<?php echo base_url()?>Admin/review_doctor'>
+                                        <i class="icon-star icon-large"></i> Doctors reviews
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-tasks icon-large"></i> Widgets
+                                    <a href='<?php echo base_url()?>Admin/clinics'>
+                                        <i class="icon-file icon-large"></i> Clinics
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-cogs icon-large"></i> Settings
+                                    <a href='<?php echo base_url()?>Admin/registered_patients'>
+                                        <i class="icon-user icon-large"></i> Registered Patients
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-list-alt icon-large"></i> Forms
+                                    <a href='<?php echo base_url()?>Admin/temp_patients'>
+                                        <i class="icon-user icon-large"></i> Temporary Patients
                                     </a>
                                 </li>
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-tasks icon-large"></i> Widgets -->
+<!--                                     </a> -->
+<!--                                 </li> -->
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-cogs icon-large"></i> Settings -->
+<!--                                     </a> -->
+<!--                                 </li> -->
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-calendar icon-large"></i> Schedule -->
+<!--                                     </a> -->
+<!--                                 </li> -->
+<!--                                 <li> -->
+<!--                                     <a href="#"> -->
+<!--                                         <i class="icon-list-alt icon-large"></i> Forms -->
+<!--                                     </a> -->
+<!--                                 </li> -->
                                 <li>
-                                    <a href="#">
-                                        <i class="icon-bar-chart icon-large"></i> Charts
+                                    <a data-toggle="modal" data-target="#myModal">
+                                        <i class="icon-bar-chart icon-large"></i>Data visualization
                                     </a>
                                 </li>
                             </ul>
@@ -82,28 +102,30 @@
                     </div>
                 
                 
-        <section class="nav nav-page">
-        <div class="container">
-            <div class="row">
-                <div class="span7">
-                    <header class="page-header">
-                    </header>
-                </div>
-                <div class="page-nav-options">
-                    <div class="span9">
-                        <ul class="nav nav-pills">
-                            <li>
-                                <a href="#"><i class="icon-home icon-large"></i></a>
-                            </li>
-                        </ul>
-                        <ul class="nav nav-tabs">
-                            <li><a href='<?php echo base_url()?>Admin/dashboard'>Doctors</a></li>
-                            <li><a href='<?php echo base_url()?>Admin/clinics'>Clinics</a></li>
-                            <li><a href='<?php echo base_url()?>Admin/registered_patients'>Registered Patients</a></li>
-                            <li><a href='<?php echo base_url()?>Admin/temp_patients'>Temporary Patients</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+		<div class="modal-content">
+		      <div class="modal-header" style="background-color: #335764;color: white;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title">Data visualization coming soon!</h4>
+		      </div>
+		      <div class="modal-body">
+		        
+		        <div>
+				<p>Data visualization refers to the techniques used to communicate data 
+				or information by encoding it as visual objects (e.g., points, lines or bars) contained in graphics.
+				The goal is to communicate information clearly and efficiently to users. 
+				It is one of the steps in data analysis or data science.</p>
+				</div>	
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+  </div>
+</div>
