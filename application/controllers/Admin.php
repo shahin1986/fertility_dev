@@ -48,6 +48,9 @@ class Admin extends CI_Controller {
 			$crud->set_subject('doctors');				
 			$crud->set_relation('clinic','clinics','name');
 			$crud->set_field_upload('photo_url','assets/uploads/files/doctors');
+			$crud->unset_texteditor('education','full_text');
+			$crud->unset_texteditor('bio','full_text');
+			$crud->unset_texteditor('specialty','full_text');
 			$output = $crud->render();
 				
 			$this->_example_output($output);

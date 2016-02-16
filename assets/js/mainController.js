@@ -38,3 +38,26 @@ $.urlParam = function(name){
 	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
 	return results[1] || 0;
 }
+
+app.controller('displayDoctors', function($scope,$http){
+	$http.get(baseUrl+"Doctors/getDoctorsListFromDB").then(function(result){
+		//console.log(result.data);
+		$scope.data = result.data;
+		
+	});
+});
+
+//app.controller('displayDoctorProfile', function($scope, $http){
+//	var id = $.urlParam('id');
+//	$http.get(baseUrl+"Doctors/getDoctorProfileFromDB/id="+id).then(function(result){
+//		$scope.data = result.data;
+//	});
+//});
+
+app.controller('displayClinics', function($scope,$http){
+	$http.get(baseUrl+"Clinics/getClinicsListFromDB").then(function(result){
+		console.log(result.data);
+		$scope.data = result.data;
+		
+	});
+});

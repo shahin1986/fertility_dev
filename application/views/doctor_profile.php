@@ -2,7 +2,7 @@
 $this->load->view('header2');
 ?>
 
-<section id="about" class="clinic" ng-controller="displayDoctors">
+<section id="about" class="clinic" ng-controller="displayDoctorProfile">
 	<div class="container">
 		
 		<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 30px;"  ng-repeat="doctor in data">

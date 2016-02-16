@@ -44,6 +44,11 @@ class Clinics extends CI_Controller {
 		$this->load->view('clinicsSearchResult');
 	}
 	
+	public function getClinicsListFromDB(){
+		$this->load->model('Model_clinics');
+		$this->Model_clinics->getClinicsListFromDB();
+	}
+	
 	public function getClinicsCoordinateFromDB(){
 		header("Access-Control-Allow-Origin: *");
 		header("Content-Type: application/json; charset=UTF-8");
