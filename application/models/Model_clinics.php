@@ -8,7 +8,7 @@ class Model_clinics extends CI_Model{
 
 		$dbh = new PDO("mysql:host=localhost;dbname=fertilitycounselors;charset=utf8", "fertility123", "Welcome#1");
 		
-		$sql = "SELECT clinics.*,doctors.full_name AS doctor_name FROM clinics LEFT JOIN doctors ON doctors.clinic=clinics.id";
+		$sql = "SELECT clinics.*,doctors.full_name AS d_name, doctors.address AS d_address, doctors.city AS d_city, doctors.state AS d_state, doctors.zipcode AS d_zipcode FROM clinics LEFT JOIN doctors ON doctors.clinic=clinics.id";
 		
 		$result = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 		//To output as-is json data result
@@ -26,11 +26,16 @@ class Model_clinics extends CI_Model{
 					'state' => $row['state'],
 					'phone' => $row['phone'],
 					'description' => $row['description'],
-					//'specialty' => $row['specialty'],
-					'non-donor-fresh-less35' => 'non-donor-fresh-less35',
-					'non-donor-fresh-35to37' => 'non-donor-fresh-35to37',
-					'non-donor-fresh-38to40' => 'non-donor-fresh-38to40',
-					'non-donor-fresh-41to42' => 'non-donor-fresh-41to42'
+					'speciality' => $row['speciality'],
+					'non_donor_fresh_less35' => $row['non-donor-fresh-less35'],
+					'non_donor_fresh_35to37' => $row['non-donor-fresh-35to37'],
+					'non_donor_fresh_38to40' => $row['non-donor-fresh-38to40'],
+					'non_donor_fresh_41to42' => $row['non-donor-fresh-41to42'],
+					'doctor_name' => $row['d_name'],
+					'doctor_address' => $row['d_address'],
+					'doctor_city' => $row['d_city'],
+					'doctor_state' => $row['d_state'],
+					'doctor_zipcode' => $row['d_zipcode']
 			];
 		}
 		$dbh = null;

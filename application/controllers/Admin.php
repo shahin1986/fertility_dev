@@ -84,7 +84,8 @@ class Admin extends CI_Controller {
 			$crud->set_table('clinics');
 			//$crud->columns('name','address','lat','lng','phone', 'description', 'review', 'birthRateLess35', 'birthRate35To40', 'birthRateMore40', 'services');
 			$crud->set_subject('clinics');
-	
+			$crud->unset_texteditor('description','full_text');
+			$crud->unset_texteditor('speciality','full_text');
 			$output = $crud->render();
 	
 			$this->_example_output($output);
