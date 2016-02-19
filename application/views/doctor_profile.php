@@ -2,17 +2,17 @@
 $this->load->view('header2');
 ?>
 
-<section id="about" class="clinic" ng-controller="displayDoctorProfile">
+<section id="about" class="clinic">
 	<div class="container">
 		
-		<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 30px;"  ng-repeat="doctor in data">
+		<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 30px;">
 			<div class="col-lg-3 padding-left">
-				<img ng-src="{{doctor.photo_url}}" alt="" />
+				<img src="<?php echo $photo_url;?>" alt="" />
 			</div>
 			<div class="col-lg-9 padding-left">
-				<h3 class="skyblue">{{doctor.full_name}}</h3></br>
-				<h4>PHYSICIAN AT {{doctor.clinic}}</h4><P>{{doctor.address}}<br/>{{doctor.city}}, {{doctor.state}} {{doctor.zipcode}}<br/>{{doctor.phone}}</P></br>
-				<p>{{doctor.bio | limitTo: 550}} ...<strong>Read More</strong></p>
+				<h3 class="skyblue"><?php echo $full_name; ?></h3></br>
+				<h4>PHYSICIAN AT <?php echo $clinic;?></h4><P><?php echo $address;?><br/><?php echo $city;?>, <?php echo $state;?> <?php echo $zipcode;?><br/><?php echo $phone;?></P></br>
+				<p><?php echo $bio?></p>
 			</div>
 		</div>
 	

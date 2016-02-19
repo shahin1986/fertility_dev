@@ -30,38 +30,40 @@ class Doctors extends CI_Controller {
 		$this->Model_doctors->getDoctorsListFromDB();
 	}
 	
-// 	public function id($id){
-// 		$this->load->view('doctor_profile');
-// 	}
+	public function id($id){
+		//$this->load->view('doctor_profile');
+		$this->getDoctorProfileFromDB($id);
+	}
 	
-// 	public function getDoctorProfileFromDB($id){
-// 		header("Access-Control-Allow-Origin: *");
-// 		header("Content-Type: application/json; charset=UTF-8");
+	public function getDoctorProfileFromDB($id){
+		//header("Access-Control-Allow-Origin: *");
+		//header("Content-Type: application/json; charset=UTF-8");
+		$dbh = new PDO("mysql:host=localhost;dbname=fertilitycounselors;charset=utf8", "fertility123", "Welcome#1");		
+		$sql = "SELECT * FROM doctors WHERE doctors.id=".$id;
+		//echo $sql;
+		$result = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
 
-// 		$dbh = new PDO("mysql:host=localhost;dbname=fertilitycounselors;charset=utf8", "fertility123", "Welcome#1");		
-// 		$sql = "SELECT doctors.*,clinics.name AS clinic_name FROM doctors LEFT JOIN clinics ON doctors.clinic=clinics.id WHERE doctors.id='".$id."'";		
-// 		$result = $dbh->query($sql)->fetchAll(PDO::FETCH_ASSOC);
-
-// 		$return = [];
-// 		foreach ($result as $row) {
-// 			$return[] = [
-// 					'full_name' => $row['full_name'],
-// 					'address' => $row['address'],
-// 					'zipcode' => $row['zipcode'],
-// 					'city' => $row['city'],
-// 					'state' => $row['state'],
-// 					'phone' => $row['phone'],
-// 					'bio' => $row['bio'],
-// 					'specialty' => $row['specialty'],
-// 					'photo_url' => 'http://localhost:8888/dev/assets/uploads/files/doctors/'.$row['photo_url'],
-// 					'clinic' => $row['clinic']
-// 			];
-// 		}
-// 		$dbh = null;
+		$return = [];
+		foreach ($result as $row) {
+			$return[] = [
+					'full_name' => $row['full_name'],
+					'address' => $row['address'],
+					'zipcode' => $row['zipcode'],
+					'city' => $row['city'],
+					'state' => $row['state'],
+					'phone' => $row['phone'],
+					'bio' => $row['bio'],
+					'specialty' => $row['specialty'],
+					'photo_url' => 'http://localhost:8888/dev/assets/uploads/files/doctors/'.$row['photo_url'],
+ 					'clinic' => $row['clinic']
+			];
+		}
+		$dbh = null;
 		
-// 		header('Content-type: application/json');
-// 		echo json_encode($return);
-		
-// 	}
+		//header('Content-type: application/json');
+		//echo json_encode($return);
+		//print_r($return[0]);
+		$this->load->view('doctor_profile', $return[0]);
+	}
 
 }

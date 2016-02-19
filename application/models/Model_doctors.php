@@ -47,6 +47,7 @@ class Model_doctors extends CI_Model{
 					'state' => $row['state'],
 					'phone' => $row['phone'],
 					'bio' => $row['bio'],
+					'id' => $row['id'],
 					'specialty' => $row['specialty'],
 					'photo_url' => 'http://localhost:8888/dev/assets/uploads/files/doctors/'.$row['photo_url'],
 					'clinic' => $row['clinic']

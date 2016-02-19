@@ -12,7 +12,7 @@ $this->load->view('header2');
 			<div class="col-lg-9 padding-left">
 				<h3 class="skyblue">{{doctor.full_name}}</h3></br>
 				<h4>PHYSICIAN AT {{doctor.clinic}}</h4><P>{{doctor.address}}<br/>{{doctor.city}}, {{doctor.state}} {{doctor.zipcode}}<br/>{{doctor.phone}}</P></br>
-				<p>{{doctor.bio | limitTo: 550}} ...<strong>Read More</strong></p>
+				<p>{{doctor.bio | limitTo: 550}} ...<strong><a ng-href="<?php echo base_url()?>Doctors/id/{{doctor.id}}">Read More</a></strong></p>
 			</div>
 		</div>
 	

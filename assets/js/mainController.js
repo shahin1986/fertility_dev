@@ -48,8 +48,10 @@ app.controller('displayDoctors', function($scope,$http){
 });
 
 //app.controller('displayDoctorProfile', function($scope, $http){
-//	var id = $.urlParam('id');
-//	$http.get(baseUrl+"Doctors/getDoctorProfileFromDB/id="+id).then(function(result){
+////	var id = $.urlParam('id');
+//	var id = 3;
+//	$http.get(baseUrl+"Doctors/getDoctorProfileFromDB/id/"+id).then(function(result){
+//		console.log(result.data);
 //		$scope.data = result.data;
 //	});
 //});
