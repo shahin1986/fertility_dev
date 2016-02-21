@@ -49,8 +49,7 @@
 					})
 
                 });
-
-            
+           
         });
 </script>
 </head>
@@ -72,7 +71,7 @@
 			<div id="navbar" class="navbar-collapse text-right collapse">
 				<ul class="nav navbar-nav navbar-right">
 					<li><a href="<?php echo base_url() ?>">HOME</a></li>
-					<li class="active"><a href="#">ABOUT</a></li>
+					<li><a href="#">ABOUT</a></li>
 					<li><a id="testt">CONTACT</a></li>
 					<li><a href="<?php echo base_url() ?>Clinics">CLINICS</a></li>
 					<li><a href="<?php echo base_url() ?>Doctors">DOCTORS</a></li>
