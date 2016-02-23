@@ -49,6 +49,20 @@
 					})
 
                 });
+            $("#find_doctor").on("click",function(){
+				$("#modal_title").html("Please enter zipcode");
+				$("#modal_body").html('<div class="form-group"><div class="col-xs-3"></br><input type="zipCode" class="form-control" name="zipCode" id="zipCode" placeholder="Enter your zip code"></div></div><a href="<?php echo base_url() ?>Doctors"><button type="button" name="submit" class="btn btn-default">Submit</button></a>');
+            });
+
+            $("#find_clinic").on("click",function(){
+				$("#modal_title").html("Please enter zipcode");
+				$("#modal_body").html('<div class="form-group"><div class="col-xs-3"></br><input type="zipCode" class="form-control" name="zipCode" id="zipCode" placeholder="Enter your zip code"></div></div><a href="<?php echo base_url() ?>Clinics"><button type="button" name="submit" class="btn btn-default">Submit</button></a>');
+            });
+
+//             $("#sign_in").on("click", function(){
+// 				$(".modal-title").html("Please sign in to your account.");
+//				$(".modal-body").html(' <div class="container"> <form method="post" id="frm_login" class="form-inline" role="form" accept-charset="utf-8" action="<?php echo base_url()?>Main/login_validation"> <div class="form-group"> <label for="email">Email:</label> <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?php $this->input->post('email')?>"> </div> <div class="form-group"> <label for="pwd">Password:</label> <input type="password" class="form-control" name="password" id="password" placeholder="Enter password"> </div> <button type="submit" name="login_submit" class="btn btn-default">Submit</button> <a href="<?php echo base_url()?>main/signup"> Sign up!</a> <div class="form_validation_error" id="error_section"><?php echo validation_errors();?></div> </form> </div>');
+//             });
            
         });
 </script>
@@ -73,8 +87,8 @@
 					<li><a href="<?php echo base_url() ?>">HOME</a></li>
 					<li><a href="#">ABOUT</a></li>
 					<li><a id="testt">CONTACT</a></li>
-					<li><a href="<?php echo base_url() ?>Clinics">CLINICS</a></li>
-					<li><a href="<?php echo base_url() ?>Doctors">DOCTORS</a></li>
+					<li><a data-toggle="modal" data-target="#myModal2" id="find_clinic">CLINICS</a></li>
+					<li><a data-toggle="modal" data-target="#myModal2" id="find_doctor">DOCTORS</a></li>
 					<li><a data-toggle="modal" data-target="#myModal">SIGN IN</a></li>
 				 </ul>
 			</div><!--/.nav-collapse -->
@@ -96,27 +110,48 @@
 		      </div>
 		      <div class="modal-body">
 		        
-		        <div class="container">
-		  <form method="post" id="frm_login" class="form-inline" role="form" accept-charset="utf-8" action="<?php echo base_url()?>Main/login_validation">
-		    <div class="form-group">
-		      <label for="email">Email:</label>
-		      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?php $this->input->post('email')?>">
-		    </div>
-		    <div class="form-group">
-		      <label for="pwd">Password:</label>
-		      <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
-		    </div>
-		    <button type="submit" name="login_submit" class="btn btn-default">Submit</button>
-		    <a href="<?php echo base_url()?>main/signup"> Sign up!</a>
-		    <div class="form_validation_error" id="error_section"><?php echo validation_errors();?></div>
-		  </form>
-		</div>	
+		      <div class="container">
+				  <form method="post" id="frm_login" class="form-inline" role="form" accept-charset="utf-8" action="<?php echo base_url()?>Main/login_validation">
+				    <div class="form-group">
+				      <label for="email">Email:</label>
+				      <input type="email" class="form-control" name="email" id="email" placeholder="Enter email" value="<?php $this->input->post('email')?>">
+				    </div>
+				    <div class="form-group">
+				      <label for="pwd">Password:</label>
+				      <input type="password" class="form-control" name="password" id="password" placeholder="Enter password">
+				    </div>
+				    <button type="submit" name="login_submit" class="btn btn-default">Submit</button>
+				    <a href="<?php echo base_url()?>main/signup"> Sign up!</a>
+				    <div class="form_validation_error" id="error_section"><?php echo validation_errors();?></div>
+				  </form>
+			  </div>	
         
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+   	 </div>
+
+  </div>
+</div>
+
+<!-- Modal -->
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg">
+
+    <!-- Modal content-->
+		<div class="modal-content">
+		      <div class="modal-header" style="background-color: #335764;color: white;">
+		        <button type="button" class="close" data-dismiss="modal">&times;</button>
+		        <h4 class="modal-title" id="modal_title"></h4>
+		      </div>
+		      <div class="modal-body" id="modal_body">
+		        	      
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		      </div>
+   	 </div>
 
   </div>
 </div>
