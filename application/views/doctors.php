@@ -1,5 +1,5 @@
 <?php
-$this->load->view('header2');
+$this->load->view('header');
 ?>
 
 <section id="about" class="clinic" ng-controller="displayDoctors">

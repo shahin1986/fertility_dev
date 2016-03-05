@@ -1,34 +1,44 @@
-<section id="footer" class="bg">
+<section id="footer">
 	<div class="container">
-		<div class="col-lg-2 col-sm-2">
+		<div class="col-lg-2 col-sm-3 col-xs-6">
 			<h3>what we do</h3>
-			<a href="#">Find a Clinic</a>
-			<a href="#">Find a Doctor</a>
-			<a href="#">Ask a Doctor</a>
-		</div>
-		<div class="col-lg-2 col-sm-2">
-			<h3>Company</h3>
-			<a href="#">About Us</a>
-			<a href="#">Work with Us</a>
-			<a href="#">Advertise with Us</a>
-			<a href="#">Contact Us</a>
-		</div>
-		<div class="col-lg-3 col-sm-3">
-			<h3>Ways to pay for treatment</h3>
-			<a href="#">IVF Loan</a>
-		</div>
-		<div class="col-lg-2 col-sm-2">
-			<h3>resources</h3>
-			<a href="#">Articles</a>
-			<a href="#">Blogs</a>
-		</div>
-		<div class="col-lg-2 col-sm-2">
-			<h3>need help?</h3>
-			<p>Phone Support: 1-555-555-5555</p>
-			<p>International Toll-Free: 00 800-555-5555</p>
-			<p>Contact Us</p>
-			<p>FAQ</p>
 			<ul>
+				<li><a href="#">Find a Clinic</a></li>
+				<li><a href="#">Find a Doctor</a></li>
+				<li><a href="#">Ask a Doctor</a></li>
+			</ul>	
+		</div>
+		<div class="col-lg-2 col-sm-3 col-xs-6">
+			<h3>Company</h3>
+			<ul>
+				<li><a href="#">About Us</a></li>
+				<li><a href="#">Work with Us</a></li>
+				<li><a href="#">Advertise with Us</a></li>
+				<li><a href="#">Contact Us</a></li>
+			</ul>	
+		</div>
+		<div class="col-lg-3 none col-sm-3 col-xs-6">
+			<h3>Ways to pay for treatment</h3>
+			<ul>
+				<li><a href="#">IVF Loan</a></li>
+			</ul>	
+		</div>
+		<div class="col-lg-2 col-sm-3 col-xs-6">
+			<h3>resources</h3>
+			<ul>
+				<li><a href="#">Articles</a></li>
+				<li><a href="#">Blogs</a></li>
+			</ul>
+		</div>
+		<div class="col-lg-3 col-sm-3 col-xs-6">
+			<h3>need help?</h3>
+			<ul>
+				<li><a href="#">Phone Support: 1-555-555-5555</a></li>
+				<li><a href="#">International Toll-Free: 00 800-555-5555</a></li>
+				<li><a href="#">Contact Us</a></li>
+				<li><a href="#">FAQ</a></li>
+			</ul>
+			<ul class="social">
 				<li><a href="#"><img src="<?php echo asset_url();?>/images/icon_facebook.png" alt="" /></a></li>
 				<li><a href="#"><img src="<?php echo asset_url();?>/images/icon_twitter.png" alt="" /></a></li>
 				<li><a href="#"><img src="<?php echo asset_url();?>/images/icon_linkedin.png" alt="" /></a></li>

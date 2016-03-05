@@ -68,7 +68,7 @@
 </script>
 </head>
 <body ng-app="fertility">
-<section id="header" class="inner">
+<section id="header">
 	<div class="container">
 		<nav class="navbar navbar-default navbar-static-top responsive col-lg-12" role="navigation">
 			<div class="navbar-header responsive">
@@ -79,7 +79,7 @@
 				<span class="icon-bar"></span>
 			  </button>
 			  <div id="logo" class="navbar-brand">
-				<a href="<?php echo base_url() ?>">FERTILITY COUNSELORS</a>
+				<a href="<?php echo base_url() ?>"><img src="<?php echo asset_url();?>images/logo.png" alt=""/></a>
 			  </div>
 			</div>
 			<div id="navbar" class="navbar-collapse text-right collapse">

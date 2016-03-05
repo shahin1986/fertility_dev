@@ -4,167 +4,146 @@ $this->load->view('header');
 ?>
 
 
-
-<section id="banner" class="inner">
-	<div class="container">
-		<div class="large-12 text-center columns" ng-controller="homeSearchBasedZipCode">
-			<ul >
-				<li>
-					<div class="col-lg-10 col-lg-offset-1">
-						<h3>OVER 10,000 FERTILITY DOCTORS & CLINICS</h3>
-						<p>find the top 10 fertility clinics in your area</p>
-						<h5>(based on successful pregnancy and birth rates)</h5>
-					</div>
-					<div class="container">
-						<div class="col-lg-6 top col-sm-10 col-xs-12 col-lg-offset-3 col-sm-offset-1">
-							<form>
-								<div class="col-lg-8 responsive col-sm-8">
-									<input type="text" id="zipCodeSearch" placeholder="Enter Zip Code"/>
-								</div>
-								<div class="col-lg-3 responsive col-sm-3 none text-left columns">
-									<input type="submit" value="search"/ ng-click="search()">
-								</div>
-							</form>						
-						</div>
-					</div>
-				</li>
 				
-			</ul>
+<section id="banner">
+	<div class="container">
+		<div class="col-lg-10 col-lg-offset-1 col-xs-12 col-xs-offset-0 text-center columns" ng-controller="homeSearchBasedZipCode">
+			<div class="find-top">
+				<h2>Find</h2>
+				<h1>top 10</h1>
+				<h2>fertility clinics in your area</h2>
+				<p>(Based on successful pregnancy and birth rates)</p>
+				<div class="col-lg-10"><input type="search" id="zipCodeSearch" placeholder="Enter Zip Code"></div>
+				<div class="col-lg-2 text-left none"><input type="submit" value="search" ng-click="search()"></div>
+			</div>
 		</div>
 	</div>
-	<div class="down left">
-		<div class="container">
-			<div class="large-12 text-center columns">
-				<ul class="bxslider-two">
-					<li>Stanford Fertility & Reproductive Center</li>
-					<li class="second">John Hopkins Fertility Center</li>
-					<li class="last">Reproductive Science Center</li>
+</section>
+<section id="about">
+	<div class="container">
+		<div class="col-lg-12 col-xs-12  text-center">
+			<p>We are a networks of the highest rated fertility doctors and clinics across the U.S. Our members
+			are fertility specialists with years of success helping woman (and men) with fertility problems. </p>
+		</div>
+	</div>
+</section>
+<section id="info">
+	<div class="container">
+		<div class="col-lg-12 col-xs-12 responsive text-center">
+			<div class="panel responsive">
+				<h3>ARE YOU HAVING PROBLEMS GETTING PREGNANT?</h3>
+				<h5 class="top">Submit your questions to a fertility doctor. It’s easy, it’s confidential.</h5>
+				<div class="col-lg-7 text-left col-sm-6 responsive">
+					<p>How many months have you been trying to get pregnant?</p>
+					<div class="col-lg-12 none range">
+						<input id="ex1" data-slider-id='ex1Slider' type="text" placeholder="1 Months" data-slider-min="0" data-slider-max="36" data-slider-step="1" data-slider-value="18"/>
+						<div class="col-lg-3 pull-left none col-xs-6">
+							<h4>1 month</h4>
+						</div>
+						<div class="col-lg-3 col-xs-6 pull-right text-right none">
+							<h4>36 month</h4>
+						</div>
+					</div>
+					<div class="col-lg--12 select-box">
+						<label>What is your age?</label>
+						<select>
+							<option>Select</option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+					<div class="col-lg--12 select-box">
+						<label>Are you worried about any health condition
+						that could make conceiving difficult?</label>
+						<select>
+							<option>Select</option>
+							<option></option>
+							<option></option>
+						</select>
+					</div>
+				</div>
+				<div class="col-lg-5 text-left col-sm-6">
+					<label>Type your question for a fertility doctor here</label>
+					<textarea></textarea>
+					<input type="submit" value="FIND OUT">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="content">
+	<div class="container">
+		<div class="col-lg-4 col-sm-4">
+			<a href="#">egg (oocyte) freezing</a>
+			<img class="margin-bottom" src="<?php echo asset_url();?>images/img-1.png" alt=""/>
+		</div>
+		<div class="col-lg-4 col-sm-4">
+			<a href="#">in vitro fertilization (IVF)</a>
+			<img class="margin-bottom" src="<?php echo asset_url();?>images/img-2.png" alt=""/>
+		</div>
+		<div class="col-lg-4 text-center col-sm-4">
+			<h6>Find</h6>
+			<h2>TOP 10</h2>
+			<h6>fertility clinics in your area</h6>
+			<input type="text" value="Enter Zip Code">
+			<input type="submit" value="search">
+		</div>
+	</div>
+	<div class="container">
+		<div class="col-lg-4 col-sm-4">
+			<a href="#">genetic diagnosis</a>
+			<img src="<?php echo asset_url();?>images/img-3.png" alt=""/>
+		</div>
+		<div class="col-lg-4 col-sm-4">
+			<a href="#">ovulation induction</a>
+			<img src="<?php echo asset_url();?>images/img-4.png" alt=""/>
+		</div>
+		<div class="col-lg-4 text-center col-sm-4">
+			<div class="counselor">
+				<h5>Speak to a fertility counselor </h5>
+				<div class="col-lg-12 text-center"><a class="phon">1-800-555-5555</a></div>
+				<div class="images">
+					<img src="<?php echo asset_url();?>images/girl.png" alt=""/>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="condition">
+			<div class="col-lg-4">
+				<h4>conditions</h4>
+				<ul>
+					<li><a href="#">Unexplained Infertility</a></li>
+					<li><a href="#">Diminished Ovarian Reserve</a></li>
+					<li><a href="#">Tubal Disease</a></li>
+					<li><a href="#">Endometriosis</a></li>
+					<li><a href="#">Implantation Problems</a></li>
+					<li><a href="#">Male Infertility</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 none">
+				<h4>treatments</h4>
+				<ul>
+					<li><a href="#">In Vitro Fertilization (VIF)</a></li>
+					<li><a href="#">IVF/Egg Sharing Treatment</a></li>
+					<li><a href="#">Natural Cycle IVF</a></li>
+					<li><a href="#">Egg (Oocyte) Freezing</a></li>
+					<li><a href="#">Oocyte (Egg) Donation (Fresh Cycle)</a></li>
+					<li><a href="#">Surrogacy & Oocyte Donation</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-4 last">
+				<ul>
+					<li><a href="#">Ovulation Induction</a></li>
+					<li><a href="#">Genetic Diagnosis (PGD or PGS)</a></li>
+					<li><a href="#">Gestational Surrogacy</a></li>
+					<li><a href="#">Sperm Aspiration</a></li>
+					<li><a href="#">Single and LGBT Treatments</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 </section>
-<section id="about" class="inner">
-	<div class="container">
-		<div class="col-lg-10 col-xs-12 col-lg-offset-1 text-center">
-			<p>We are a networks of the highest rated fertility doctors and clinics across the U.S. Our members are fertility specialists with years of success helping woman get pregnant.</p>
-			<h3>How many months have you been trying to get pregnant?</h3>
-		</div>
-	</div>
-</section>
-<section id="form">
-	<div class="container">
-		<div class="col-lg-12 range">
-			<input id="ex1" data-slider-id='ex1Slider' type="text" placeholder="1 Months" data-slider-min="0" data-slider-max="36" data-slider-step="1" data-slider-value="18"/>
-			<div class="col-lg-3 pull-left none col-xs-6">
-				<h4>1 month</h4>
-			</div>
-			<div class="col-lg-3 col-xs-6 pull-right text-right none">
-				<h4>36 month</h4>
-			</div>
-		</div>
-		<form>
-			<div class="col-lg-4 col-xs-12 col-sm-5">
-				<label>What is your age?</label>
-				<select>
-					<option>Select</option>
-					<option>Select</option>
-					<option>Select</option>
-				</select>
-				<label>Are you worried about any health condition that could make conceiving difficult?</label>
-				<select>
-					<option>Select</option>
-					<option>Select</option>
-					<option>Select</option>
-				</select>
-			</div>
-			<div class="col-lg-5 col-xs-12 col-sm-4">
-				<label>Type your question for a fertility doctor here</label>
-				<textarea></textarea>
-			</div>
-			<div class="col-lg-3 col-xs-12 col-sm-3">
-				<input type="submit" value="Submit" />
-			</div>
-		</form>
-	</div>
-</section>
-<section id="testimonials">
-	<div class="container">
-		<div class="col-lg-9 nopadding">
-			<div class="col-lg-6 col-sm-6">
-				<a href="#">egg (oocyte) freezing <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
-				<img src="<?php echo asset_url();?>/images/testi_first.png" alt=""/>
-			</div>
-			<div class="col-lg-6 col-sm-6">
-				<div class="position">
-					<a href="#">in vitro fertilization (IVF) <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
-					<img src="<?php echo asset_url();?>/images/testi_second.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-lg-6 col-sm-6">
-				<div class="position">
-					<a href="#">oocyte (egg) Donation <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
-					<img src="<?php echo asset_url();?>/images/testi_third.png" alt=""/>
-				</div>
-			</div>
-			<div class="col-lg-6 col-sm-6">
-				<div class="position">
-					<a href="#">intrauterine insemination (iui) <img src="<?php echo asset_url();?>/images/blue_arrow.png" alt="" /></a>
-					<img src="<?php echo asset_url();?>/images/testi_fourth.png" alt=""/>
-				</div>
-			</div>
-		</div>
-		<div class="col-lg-3 text-center col-sm-12 nopadding">
-			<div class="col-lg-12 col-sm-6 nopadding">
-			<h3>find the top 10 fertility
-clinics in your area</h3>
-			<p>(Based on successful pregnancy<br />and birth rates)</p>
-			<form>
-				<input type="text" placeholder="Enter Zip Code" />
-				<input type="submit" value="search" />
-			</form>
-			</div>
-			<div class="col-lg-12 col-sm-6 nopadding">
-				<div class="panel">
-					<img class="first" src="<?php echo asset_url();?>/images/img_caller.png" alt="" />
-					<h4>Speak to a fertility<br/>counselor </h5>
-					<h5><img src="<?php echo asset_url();?>/images/icon_call.png" alt="" /> 1-800-555-5555</h5>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
-<section id="condition">
-	<div class="container">
-		<div class="col-lg-4 col-sm-4 col-md-4">
-			<h3>conditions</h3>
-			<a href="#">Unexplained Infertility</a>
-			<a href="#">Diminished Ovarian Reserve</a>
-			<a href="#">Tubal Disease</a>
-			<a href="#">Endometriosis</a>
-			<a href="#">Implantation Problems</a>
-			<a href="#">Male Infertility</a>
-		</div>
-		<div class="col-lg-4 col-sm-4 col-md-4">
-			<h3>treatments</h3>
-			<a href="#">In Vitro Fertilization (VIF)</a>
-			<a href="#">IVF/Egg Sharing Treatment</a>
-			<a href="#">Natural Cycle IVF</a>
-			<a href="#">Egg (Oocyte) Freezing</a>
-			<a href="#">Oocyte (Egg) Donation (Fresh Cycle)</a>
-			<a href="#">Surrogacy & Oocyte Donation</a>
-		</div>
-		<div class="col-lg-4 col-sm-4 col-md-4">
-			<h3>&nbsp;</h3>
-			<a href="#">Ovulation Induction</a>
-			<a href="#">Genetic Diagnosis (PGD or PGS)</a>
-			<a href="#">Gestational Surrogacy</a>
-			<a href="#">Sperm Aspiration</a>
-			<a href="#">Single and LGBT Treatments</a>
-		</div>
-	</div>
-</section>
-
 
 
 <?php
