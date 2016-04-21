@@ -54,7 +54,7 @@ class Doctors extends CI_Controller {
 					'phone' => $row['phone'],
 					'bio' => $row['bio'],
 					'specialty' => $row['specialty'],
-					'photo_url' => 'http://localhost:8888/dev/assets/uploads/files/doctors/'.$row['photo_url'],
+					'photo_url' => 'http://fertilitycounselors.org/dev/assets/uploads/files/doctors/'.$row['photo_url'],
  					'clinic' => $row['clinic']
 			];
 		}

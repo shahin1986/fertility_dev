@@ -1,4 +1,4 @@
-var baseUrl = 'http://localhost:8888/dev/';
+var baseUrl = 'http://fertilitycounselors.org/dev/';
 app.controller('homeSearchBasedZipCode', function($scope, $http){
 //	$http.get(baseUrl+'Main/getClinicsInfo').then(function(response){
 //		
@@ -6,7 +6,7 @@ app.controller('homeSearchBasedZipCode', function($scope, $http){
 //var zipCode = $("#zipCodeSearch").val();
 	$scope.search = function(){
 		var zipCode = $("#zipCodeSearch").val();
-			window.location.href='http://localhost:8888/dev/Clinics/searchResult?zipCode='+zipCode;		
+			window.location.href='http://fertilitycounselors.org/dev/Clinics/searchResult?zipCode='+zipCode;		
 	};
 });
 
@@ -16,7 +16,7 @@ app.controller('searchResultZipCode', function($scope, $http){
 		$scope.latZipcode = result.data.results[0].geometry.location.lat;
 		$scope.lngZipcode = $scope.result = result.data.results[0].geometry.location.lng;
 		
-		$http.get("http://localhost:8888/dev/Clinics/getClinicsCoordinateFromDB").then(function(result){
+		$http.get("http://fertilitycounselors.org/dev/Clinics/getClinicsCoordinateFromDB").then(function(result){
 			console.log(result.data.records);
 		});
 		

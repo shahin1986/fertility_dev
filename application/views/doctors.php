@@ -7,7 +7,7 @@ $this->load->view('header');
 		
 		<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 30px;"  ng-repeat="doctor in data">
 			<div class="col-lg-3 padding-left">
-				<img ng-src="{{doctor.photo_url}}" alt="" />
+				<img ng-src="{{doctor.photo_url.length >65 ? doctor.photo_url :'http://fertilitycounselors.org/dev/assets/uploads/files/doctors/doc.png'}}" alt="" />
 			</div>
 			<div class="col-lg-9 padding-left">
 				<h3 class="skyblue">{{doctor.full_name}}</h3></br>

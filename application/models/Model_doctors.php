@@ -49,7 +49,7 @@ class Model_doctors extends CI_Model{
 					'bio' => $row['bio'],
 					'id' => $row['id'],
 					'specialty' => $row['specialty'],
-					'photo_url' => 'http://localhost:8888/dev/assets/uploads/files/doctors/'.$row['photo_url'],
+					'photo_url' => 'http://fertilitycounselors.org/dev/assets/uploads/files/doctors/'.$row['photo_url'],
 					'clinic' => $row['clinic']
 			];
 		}

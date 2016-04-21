@@ -7,7 +7,7 @@ $this->load->view('header2');
 		
 		<div class="col-lg-12 col-md-12 col-sm-12" style="margin-bottom: 30px;">
 			<div class="col-lg-3 padding-left">
-				<img src="<?php echo $photo_url;?>" alt="" />
+				<img src="<?php if(strlen($photo_url) > 0){echo $photo_url;} else {echo 'http://fertilitycounselors.org/dev/assets/uploads/files/doctors/doc.png';}?>" alt="" />
 			</div>
 			<div class="col-lg-9 padding-left">
 				<h3 class="skyblue"><?php echo $full_name; ?></h3></br>
